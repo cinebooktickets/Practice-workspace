@@ -18,3 +18,4 @@ next pull, and B's agent continues from here instead of rediscovering state.
 | Module/Component | Test status | Blockers | Last updated (by, date) |
 |---|---|---|---|
 | _(seed from GRAPH_REPORT.md)_ | todo | — | — |
+| frontend/src/context/auth.tsx (`useAuth()` / `AuthProvider`) | 3 unit tests added (auth.test.tsx): throws outside provider, unauthenticated defaults, backend-profile bootstrap merge — all passing | none | Claude, 2026-08-04 |
