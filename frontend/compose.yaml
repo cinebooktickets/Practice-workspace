@@ -1,0 +1,19 @@
+name: primeassist-frontend
+services:
+  frontend:
+    container_name: primeassist-frontend
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+      target: dev
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount source for hot reload — node_modules stays in container
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./scripts:/app/scripts
+      - ./coverage:/app/coverage
+      - /app/node_modules
+    env_file:
+      - .env.local

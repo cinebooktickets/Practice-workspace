@@ -1,0 +1,46 @@
+trigger:
+  branches:
+    include:
+      - main
+      - feature/*
+
+pr:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  DOCKER_BUILDKIT: 1
+
+steps:
+  - task: DockerInstaller@0
+    displayName: Ensure Docker is available
+    inputs:
+      dockerVersion: '27.0.3'
+
+  - script: docker compose -f frontend/compose.yaml build frontend
+    displayName: Build frontend Docker image
+
+  - script: |
+      # compose.yaml requires env_file: .env.local — create a stub for CI
+      # (tests mock all API calls; no real secrets are needed)
+      touch frontend/.env.local
+    displayName: Create stub .env.local for CI
+
+  - script: |
+      docker compose -f frontend/compose.yaml run --rm \
+        -e CI=true \
+        frontend npm run test:coverage
+    displayName: Run tests with coverage
+    continueOnError: false
+
+  - task: PublishCodeCoverageResults@1
+    displayName: Publish coverage report to ADO
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/frontend/coverage/cobertura-coverage.xml'
+      failIfCoverageEmpty: false
+    condition: succeededOrFailed()

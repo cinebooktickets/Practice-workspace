@@ -1,0 +1,48 @@
+# Copilot working notes — local only, never push
+.github/copilot-notes/
+
+# Environment files — never commit
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+*.env
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+.vitest/
+playwright-report/
+test-results/
+
+# Build output
+dist/
+build/
+
+# Azure Boards IDs — contains live work item IDs, keep local
+frontend/scripts/board-ids.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# graphify
+graphify-out/
