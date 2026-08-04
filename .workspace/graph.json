@@ -1861,10 +1861,10 @@
       "source_file": "frontend/next.config.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 52,
+      "community": 53,
       "norm_label": "next.config.js",
       "id": "frontend_next_config",
-      "community_name": "Community 52"
+      "community_name": "Community 53"
     },
     {
       "label": "nextConfig",
@@ -1872,10 +1872,10 @@
       "source_file": "frontend/next.config.js",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 52,
+      "community": 53,
       "norm_label": "nextconfig",
       "id": "frontend_next_config_nextconfig",
-      "community_name": "Community 52"
+      "community_name": "Community 53"
     },
     {
       "label": "package.json",
@@ -2389,10 +2389,10 @@
       "source_file": "frontend/package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 51,
+      "community": 35,
       "norm_label": "class-variance-authority",
       "id": "frontend_package_dependencies_class_variance_authority",
-      "community_name": "Community 51"
+      "community_name": "Community 35"
     },
     {
       "label": "class-variance-authority",
@@ -2400,76 +2400,76 @@
       "source_file": "frontend/package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 51,
+      "community": 35,
       "norm_label": "class-variance-authority",
       "id": "class_variance_authority",
+      "community_name": "Community 35"
+    },
+    {
+      "label": "clsx",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "clsx",
+      "id": "frontend_package_dependencies_clsx",
+      "community_name": "Community 52"
+    },
+    {
+      "label": "clsx",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "clsx",
+      "id": "clsx",
+      "community_name": "Community 52"
+    },
+    {
+      "label": "geist",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": 54,
+      "norm_label": "geist",
+      "id": "frontend_package_dependencies_geist",
+      "community_name": "Community 54"
+    },
+    {
+      "label": "geist",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": 54,
+      "norm_label": "geist",
+      "id": "geist",
+      "community_name": "Community 54"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 51,
+      "norm_label": "lucide-react",
+      "id": "frontend_package_dependencies_lucide_react",
       "community_name": "Community 51"
     },
     {
-      "label": "clsx",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 35,
-      "norm_label": "clsx",
-      "id": "frontend_package_dependencies_clsx",
-      "community_name": "Community 35"
-    },
-    {
-      "label": "clsx",
-      "file_type": "concept",
-      "source_file": "frontend/package.json",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 35,
-      "norm_label": "clsx",
-      "id": "clsx",
-      "community_name": "Community 35"
-    },
-    {
-      "label": "geist",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 53,
-      "norm_label": "geist",
-      "id": "frontend_package_dependencies_geist",
-      "community_name": "Community 53"
-    },
-    {
-      "label": "geist",
-      "file_type": "concept",
-      "source_file": "frontend/package.json",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 53,
-      "norm_label": "geist",
-      "id": "geist",
-      "community_name": "Community 53"
-    },
-    {
-      "label": "lucide-react",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L35",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "lucide-react",
-      "id": "frontend_package_dependencies_lucide_react",
-      "community_name": "Community 54"
-    },
-    {
       "label": "lucide-react",
       "file_type": "concept",
       "source_file": "frontend/package.json",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 54,
+      "community": 51,
       "norm_label": "lucide-react",
       "id": "lucide_react",
-      "community_name": "Community 54"
+      "community_name": "Community 51"
     },
     {
       "label": "next",
@@ -32861,5 +32861,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e6d99b2f038f7b4ce9e68245d6355a74b03ebb24"
+  "built_at_commit": "668b993f6986ba566645d2d3e3ebf67d782f5ac1"
 }

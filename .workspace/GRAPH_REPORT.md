@@ -9,7 +9,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e6d99b2f`
+- Built from commit: `668b993f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -268,7 +268,7 @@ Nodes (7): doctor.sh script, bad(), hdr(), note(), ok(), probe(), warn()
 
 ### Community 35 - "Community 35"
 Cohesion: 0.29
-Nodes (7): @auth0/auth0-react, clsx, dependencies, @auth0/auth0-react, clsx, @radix-ui/react-slot, @radix-ui/react-slot
+Nodes (7): @auth0/auth0-react, class-variance-authority, dependencies, @auth0/auth0-react, class-variance-authority, @radix-ui/react-slot, @radix-ui/react-slot
 
 ### Community 36 - "Community 36"
 Cohesion: 0.38
@@ -328,7 +328,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `react` connect `Community 13` to `Community 1`, `Community 3`, `Community 5`, `Community 10`, `Community 20`, `Community 21`, `Community 22`, `Community 26`, `Community 28`, `Community 35`, `Community 37`, `Community 38`, `Community 39`, `Community 46`, `Community 47`, `Community 48`, `Community 74`, `Community 75`, `Community 76`?**
   _High betweenness centrality (0.156) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `Community 35` to `Community 2`, `Community 13`, `Community 51`, `Community 53`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`?**
+- **Why does `dependencies` connect `Community 35` to `Community 2`, `Community 13`, `Community 51`, `Community 52`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`?**
   _High betweenness centrality (0.141) - this node is a cross-community bridge._
 - **Why does `useAuth()` connect `Community 13` to `Community 1`, `Community 3`, `Community 4`, `Community 5`, `Community 9`, `Community 11`, `Community 14`, `Community 20`, `Community 22`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 27`, `Community 28`, `Community 37`, `Community 38`, `Community 39`, `Community 46`, `Community 47`, `Community 48`?**
   _High betweenness centrality (0.054) - this node is a cross-community bridge._
