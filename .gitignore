@@ -46,3 +46,6 @@ Thumbs.db
 
 # graphify
 graphify-out/
+# staged-by: workspace
+graphify-out/
+.workspace/local/
