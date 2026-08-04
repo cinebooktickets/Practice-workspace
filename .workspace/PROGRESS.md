@@ -17,5 +17,10 @@ next pull, and B's agent continues from here instead of rediscovering state.
 
 | Module/Component | Test status | Blockers | Last updated (by, date) |
 |---|---|---|---|
+| `src/lib/api.ts` | ✅ green (10 tests) | — | Copilot, 2026-08-04 |
+| `src/context/auth.tsx` | ✅ green (6 tests) | — | Copilot, 2026-08-04 |
+| `src/components/protected-route.tsx` | ✅ green (5 tests) | — | Copilot, 2026-08-04 |
+| `src/app/dashboard/live-support/page.tsx` | ✅ green (25 tests) | — | Copilot, 2026-08-04 |
+| `src/test/setup.ts` | recreated | deleted then restored this session | Copilot, 2026-08-04 |
 | _(seed from GRAPH_REPORT.md)_ | todo | — | — |
 | frontend/src/context/auth.tsx (`useAuth()` / `AuthProvider`) | 3 unit tests added (auth.test.tsx): throws outside provider, unauthenticated defaults, backend-profile bootstrap merge — all passing | none | Claude, 2026-08-04 |
