@@ -1,0 +1,3 @@
+# staged-by: workspace — workspace repo config (committed)
+WORKSPACE_VERSION=1
+ENV_PROTECTION=true

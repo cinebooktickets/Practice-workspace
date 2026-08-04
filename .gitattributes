@@ -1,0 +1,6 @@
+
+# staged-by: workspace
+*.sh                text eol=lf
+.workspace/hooks/** text eol=lf
+.workspace/bin/*.sh text eol=lf
+*.ps1               text eol=crlf

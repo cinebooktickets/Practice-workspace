@@ -1,0 +1,36 @@
+// staged-by: workspace
+// The seeded repo's own Dev Container — every developer who clones this repo
+// can "Reopen in Container" and get the same toolchain the workspace uses,
+// with graphify, jq, and the agent CLIs installed by post-create.sh.
+{
+  "name": "AI-Enabled Repository",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": { "version": "17", "installMaven": true },
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "anthropic.claude-code",
+        "vscjava.vscode-java-pack",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+        // VS Code agent hooks are a Preview feature behind this flag. Setting it
+        // here applies at the container (Remote) scope; VS Code may or may not
+        // honor a Preview flag at that scope — doctor prints the runtime caveat.
+        "chat.tools.hooks.enabled": true
+      }
+    }
+  }
+}

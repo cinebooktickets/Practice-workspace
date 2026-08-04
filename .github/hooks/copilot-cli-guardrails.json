@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "bash .workspace/hooks/session-start.sh",
+        "powershell": "C:\\PROGRA~1\\Git\\bin\\bash.exe .workspace/hooks/session-start.sh",
+        "env": {
+          "GUARDRAILS_DIALECT": "vscode",
+          "WORKSPACE_STAGED_BY": "staged-by: workspace"
+        },
+        "timeoutSec": 30
+      }
+    ],
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "bash .workspace/hooks/block-dangerous-bash.sh",
+        "powershell": "C:\\PROGRA~1\\Git\\bin\\bash.exe .workspace/hooks/block-dangerous-bash.sh",
+        "env": {
+          "GUARDRAILS_DIALECT": "vscode",
+          "WORKSPACE_STAGED_BY": "staged-by: workspace"
+        },
+        "timeoutSec": 10
+      },
+      {
+        "type": "command",
+        "bash": "bash .workspace/hooks/protect-sensitive-files.sh",
+        "powershell": "C:\\PROGRA~1\\Git\\bin\\bash.exe .workspace/hooks/protect-sensitive-files.sh",
+        "env": {
+          "GUARDRAILS_DIALECT": "vscode",
+          "WORKSPACE_STAGED_BY": "staged-by: workspace"
+        },
+        "timeoutSec": 10
+      },
+      {
+        "type": "command",
+        "bash": "bash .workspace/hooks/enforce-test-mode.sh",
+        "powershell": "C:\\PROGRA~1\\Git\\bin\\bash.exe .workspace/hooks/enforce-test-mode.sh",
+        "env": {
+          "GUARDRAILS_DIALECT": "vscode",
+          "WORKSPACE_STAGED_BY": "staged-by: workspace"
+        },
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
